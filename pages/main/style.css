@@ -78,7 +78,7 @@ body {
   font-weight: normal;
   font-size: 35px;
   line-height: 130%;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
 }
 
 .text-h3-mobile {
@@ -86,7 +86,7 @@ body {
   font-weight: normal;
   font-size: 25px;
   line-height: 130%;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
 }
 
 .text-h4 {
@@ -94,7 +94,7 @@ body {
   font-weight: normal;
   font-size: 20px;
   line-height: 115%;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
 }
 
 .text-h5 {
@@ -102,7 +102,7 @@ body {
   font-weight: normal;
   font-size: 15px;
   line-height: 115%;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
 }
 
 .h5-modal-window {
@@ -110,7 +110,7 @@ body {
   font-weight: bold;
   font-size: 15px;
   line-height: 110%;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
 }
 
 .paragraph-l {
@@ -137,20 +137,12 @@ body {
   font-weight: normal;
   font-size: 32px;
   line-height: 110%;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
 }
 
 .logo_subtitle {
   font-family: var(--second-family);
   font-size: 13px;
   line-height: auto;
-  letter-spacing: 10%;
-}
-
-.header {
-  min-width: 1200px;
-  display: flex;
-}
-
-.header__nav {
+  letter-spacing: 0.1em;
 }
