@@ -1,0 +1,60 @@
+.gradient-background {
+  background-image: url(../../assets/images/start-screen-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__wrapper {
+  flex-grow: 1;
+  display: flex;
+  gap: 42px;
+}
+
+.hero {
+  margin-top: 90px;
+}
+
+.hero__puppy_wrapper {
+  display: flex;
+}
+
+.hero__content {
+  max-width: 460px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.hero__heading {
+  color: var(--color-light-xl);
+  max-width: 310px;
+  width: 100%;
+  padding-top: 163px;
+  margin: 0;
+}
+
+.hero__subheading {
+  color: var(--color-dark-s);
+  margin: 0;
+}
+
+.hero__button {
+  width: 207px;
+  height: 52px;
+  border-radius: 100px;
+  border: none;
+  background-color: var(--color-primary);
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-3xl);
+
+  cursor: pointer;
+}
