@@ -1,0 +1,36 @@
+.about__content {
+  padding-top: 80px;
+  display: flex;
+  gap: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__text {
+  max-width: 430px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about__heading {
+  margin: 0;
+  color: var(--color-dark-l);
+  max-width: 370px;
+  width: 100%;
+}
+
+.about__subheading {
+  margin: 0;
+  color: var(--color-dark-xl);
+}
+
+.about__img_wrapper {
+  max-width: 300px;
+  max-height: 408px;
+}
+
+.about__img_wrapper img {
+  width: 100%;
+}
