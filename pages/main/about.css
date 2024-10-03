@@ -1,5 +1,6 @@
 .about__content {
   padding-top: 80px;
+  padding-bottom: 100px;
   display: flex;
   gap: 120px;
   justify-content: center;
