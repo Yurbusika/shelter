@@ -12,8 +12,6 @@
 
 .pets__heading {
   padding-top: 80px;
-  max-width: 400px;
-  width: 100%;
   color: var(--color-dark-l);
   text-align: center;
   margin: 0;
