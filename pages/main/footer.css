@@ -31,6 +31,8 @@
 .location__london {
   display: flex;
   gap: 20px;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .footer__content a {
