@@ -33,3 +33,86 @@
 
   cursor: pointer;
 }
+
+.pets__slider {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pets__slider_btn-prev {
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--color-primary);
+  border-radius: 100px;
+  background-color: transparent;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 53px;
+}
+
+.pets__slider_btn-next {
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--color-primary);
+  border-radius: 100px;
+  background-color: transparent;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 53px;
+}
+
+.pets__slider_container {
+  display: flex;
+  gap: 90px;
+  overflow: hidden;
+  flex-shrink: 10;
+  /* width: 990px; */
+}
+
+.slider__card {
+  background-color: var(--color-light-s);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 9px;
+  flex-basis: 270px;
+  flex-grow: 1;
+}
+
+.card__name {
+  font-family: var(--font-family);
+  color: var(color-dark-l);
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin: 0;
+}
+
+.card__button {
+  width: 187px;
+  height: 52px;
+  border: 2px solid var(--color-primary);
+  border-radius: 100px;
+  background-color: transparent;
+  cursor: pointer;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-3xl);
+  margin-bottom: 30px;
+}
