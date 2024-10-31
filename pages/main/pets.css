@@ -72,11 +72,14 @@
 }
 
 .pets__slider_container {
+  overflow: hidden;
+  width: 990px;
+}
+
+.slider__line {
   display: flex;
   gap: 90px;
-  overflow: hidden;
-  flex-shrink: 10;
-  /* width: 990px; */
+  transition: all ease 0.5s;
 }
 
 .slider__card {
@@ -116,3 +119,8 @@
   color: var(--color-dark-3xl);
   margin-bottom: 30px;
 }
+
+/* .card__img_wrapper img {
+  max-width: 270px;
+  width: 100%;
+} */

@@ -1,9 +1,7 @@
+const slider = document.querySelector('.slider__line');
 const container = document.querySelector('.pets__slider_container');
 const prev = document.querySelector('.pets__slider_btn-prev');
-const next = document.querySelector('pets__slider_btn-next');
-
-let width;
-// window.addEventListener('resize', widthCalc);
+const next = document.querySelector('.pets__slider_btn-next');
 
 let activeIndex = 0;
 
@@ -43,36 +41,12 @@ function createCard(pet) {
 }
 
 function renderSlider(dataPets) {
-  container.innerHTML = '';
-  let card;
+  slider.innerHTML = '';
 
   for (const pet of dataPets) {
-    card = createCard(pet);
-    container.append(card);
+    let card = createCard(pet);
+    slider.append(card);
   }
-
-  let cardWidth = card.offsetWidth;
-
-  next.addEventListener('click', () => {
-    activeIndex++;
-    rollCards(cardWidth);
-  });
-}
-
-function widthCalc() {
-  width = document.querySelector('.pets__slider').offsetWidth;
-  console.log(width);
-  const cards = document.querySelectorAll('.slider__card');
-
-  container.style.maxWidth = width * (cards.length / 3) + 'px';
-
-  cards.forEach((card) => {
-    card.style.width = width / 3 + 'px';
-  });
-}
-
-function rollCards(cardWidth) {
-  container.style.transform = 'translate(-' + activeIndex * cardWidth + 'px';
 }
 
 async function main() {
@@ -83,3 +57,27 @@ async function main() {
 }
 
 main();
+
+function rollCards() {
+  slider.style.transform = 'translateX(-' + activeIndex * 360 + 'px)';
+}
+
+next.addEventListener('click', () => {
+  activeIndex++;
+
+  if (activeIndex >= 6) {
+    activeIndex = 0;
+  }
+
+  rollCards();
+});
+
+prev.addEventListener('click', () => {
+  activeIndex--;
+
+  if (activeIndex < 0) {
+    activeIndex = 5;
+  }
+
+  rollCards();
+});
