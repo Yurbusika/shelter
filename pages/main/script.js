@@ -1,5 +1,5 @@
 const slider = document.querySelector('.slider__line');
-const container = document.querySelector('.pets__slider_container');
+// const container = document.querySelector('.pets__slider_container');
 const prev = document.querySelector('.pets__slider_btn-prev');
 const next = document.querySelector('.pets__slider_btn-next');
 

@@ -51,6 +51,7 @@
 .credit__number {
   margin: 0;
   color: var(--color-dark-l);
+  text-decoration: none;
 }
 
 .donation__information {
