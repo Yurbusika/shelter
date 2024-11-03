@@ -1,0 +1,11 @@
+.main {
+  background-color: var(--color-light-l);
+}
+
+.pets {
+  padding-top: 80px;
+}
+
+.pets__heading {
+  color: var(--color-dark-l);
+}
