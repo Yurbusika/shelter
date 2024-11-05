@@ -18,3 +18,48 @@
   text-align: center;
   margin: 0;
 }
+
+.pets__cards {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.cards__container {
+  display: flex;
+  gap: 30px 40px;
+  flex-wrap: wrap;
+}
+
+.pets__card {
+  background-color: var(--color-light-s);
+  border-radius: 9px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.card__name {
+  color: var(--color-dark-l);
+  text-align: center;
+  margin: 0;
+}
+
+.card__button {
+  width: 187px;
+  height: 52px;
+
+  border: 2px solid var(--color-primary);
+  border-radius: 100px;
+  background-color: transparent;
+
+  margin-bottom: 30px;
+
+  color: var(color-dark-3xl);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}

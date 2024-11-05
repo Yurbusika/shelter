@@ -27,6 +27,7 @@ function createCard(pet) {
 
   const namePet = document.createElement('p');
   namePet.className = 'card__name';
+  namePet.classList.add('text-h4');
   namePet.innerHTML = pet.name;
   card.append(namePet);
 
